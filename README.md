@@ -1,3 +1,13 @@
+
+# Trello board Link
+(https://trello.com/b/bE1EnUl8/group-01-react-youtube-clone).
+
+# Group Members
+* Raymond Johnson
+* James Edmond
+* Monir Hossen
+* Ahmed Heggy
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
