@@ -1,24 +1,26 @@
-import logo from './logo.svg';
 import './App.css';
+import React, { useEffect, useState } from 'react';
+import Search from './components/search/search';
+import FetchApi from './api/fetch';
 
 function App() {
+  const [responseData, setResponseData] = useState(null);
+
+  useEffect(() => {
+    FetchApi().then(response => {
+      setResponseData(response);
+    });
+  }, []);
 
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {responseData && (
+        <div>
+          {/* Display the response data here */}
+          <p>{responseData}</p>
+        </div>
+      )}
+      <Search />
     </div>
   );
 }
