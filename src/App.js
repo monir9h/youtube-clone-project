@@ -1,7 +1,28 @@
 import logo from './logo.svg';
+import { useEffect } from 'react';
+
 import './App.css';
 
 function App() {
+
+  
+  const API_KEY = process.env.REACT_APP_API_KEY
+  console.log(API_KEY)
+  // useEffect(() => {
+
+  //   fetch(`https://youtube.googleapis.com/youtube/v3/search?key=${API_KEY}`)
+  //     .then(response => response.json())
+  //     .then(data => {
+  //       // Process the fetched data
+  //       console.log(data);
+  //     })
+  //     .catch(error => {
+  //       // Handle any errors
+  //       console.error('Error:', error);
+  //     });
+  // }, []);
+
+
   return (
     <div className="App">
       <header className="App-header">
