@@ -15,14 +15,13 @@ function App() {
         console.error("Error:", error);
       });
   }, []);
-  
-console.log(videos)
+  console.log(videos)
 
   return (
     <div className="App">
       <h2>My Videos</h2>
       {videos.map((videoTitle) => {
-        return <div key={videoTitle.id}>{videoTitle.snippet.title}</div>;
+        return <div key={videoTitle.id.videoId}>{videoTitle.snippet.title}</div>;
       })}
     </div>
   );
