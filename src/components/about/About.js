@@ -35,7 +35,6 @@ return (
             </div>
         
 
-       
             <div className="card">
                 <img src={rj} />
                 <div className="info-container">
