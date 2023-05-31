@@ -1,0 +1,36 @@
+
+strong{
+color: rgb(7,54,44);
+}
+
+footer {
+    position: fixed; /* stickey*/
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(7,54,44);
+    color: white;
+    text-align: center;
+    font-size: small;
+    font-family: monospace;
+  }
+
+  img  {
+    border: 2px solid #25283d;
+    border-radius: 3px;
+    height: 100%;
+    width: 20%;
+    justify-content: left;
+  }
+  
+  .card{
+  display: flex;
+  }
+
+.info-container{
+  text-align: center;
+  margin:auto
+}
+body{
+  font-family: 'Eagle Lake';
+}
