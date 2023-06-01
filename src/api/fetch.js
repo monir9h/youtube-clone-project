@@ -9,3 +9,4 @@ async function FetchApi(searchKeyword) {
     console.error("Error:", error);
   }
 }
+export default FetchApi

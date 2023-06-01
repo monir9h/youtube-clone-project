@@ -1,22 +1,28 @@
 import './App.css';
+import React, { useEffect, useState } from 'react';
+import FetchApi from './api/fetch';
 
 function App() {
+  const [videos, setVideos] = useState([]);
+  
+  useEffect(() => {
+    FetchApi("new-york")
+      .then((data) => {
+        setVideos(data.items);
+        
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
+  }, []);
+  console.log(videos)
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h2>My Videos</h2>
+      {videos.map((videoTitle) => {
+        return <div key={videoTitle.id.videoId}>{videoTitle.snippet.title}</div>;
+      })}
     </div>
   );
 }
