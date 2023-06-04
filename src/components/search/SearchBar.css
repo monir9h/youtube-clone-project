@@ -1,11 +1,21 @@
 .search-bar {
     padding-top: 100px;
-    width: 100%;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+
 }
 
 .search-input {
-    width: 70%;
+    width: 400px;
+    width: 100%;
+    padding: 5px 20px;
 }
 
 .search-button{
+    background-color: #dc3445;
+    font-size: large;
+    padding: 5px 20px;
+    color: white;
+    border-radius: 5px;
 }
