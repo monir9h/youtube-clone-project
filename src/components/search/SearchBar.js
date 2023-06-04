@@ -1,4 +1,4 @@
-import "./Search.css";
+import "./SearchBar.css";
 import FetchApi from "../../api/fetch";
 
 function SearchBar({searchTerm, setSearchTerm, setVideos}) {

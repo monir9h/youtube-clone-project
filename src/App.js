@@ -1,6 +1,6 @@
 import './App.css';
 import React, { useState } from 'react';
-import SearchBar from './components/search/Search.js';
+import SearchBar from './components/search/SearchBar.js';
 
 function App() {
 
