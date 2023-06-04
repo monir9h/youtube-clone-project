@@ -1,6 +1,7 @@
 import './App.css';
 import React, { useState } from 'react';
 import SearchBar from './components/search/search';
+import Modal from './components/modal-window/Modal.js';
 
 function App() {
   const [videos, setVideos] = useState([]);
@@ -14,7 +15,8 @@ function App() {
 
   return (
     <div className="App">
-      <SearchBar setVideos={setVideos} searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
+      {/* <SearchBar setVideos={setVideos} searchTerm={searchTerm} setSearchTerm={setSearchTerm}/> */}
+      <Modal/>
       
     </div>
   );
