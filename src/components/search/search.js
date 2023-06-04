@@ -1,7 +1,9 @@
 import "./Search.css";
 import FetchApi from "../../api/fetch";
 
-function SearchBar({ setVideos, searchTerm, setSearchTerm }) {
+function SearchBar({searchTerm, setSearchTerm, setVideos}) {
+
+  // call fetch function when search button is clicked
   let handleSearch = () => {
     FetchApi(searchTerm)
       .then((data) => {

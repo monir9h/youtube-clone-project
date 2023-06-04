@@ -1,16 +1,16 @@
 import './App.css';
 import React, { useState } from 'react';
-import SearchBar from './components/search/search';
+import SearchBar from './components/search/Search.js';
 
 function App() {
+
   const [videos, setVideos] = useState([]);
 	const [searchTerm, setSearchTerm] = useState("")
 
 
-  
 
   console.log(videos)
-  console.log(searchTerm)
+
 
   return (
     <div className="App">
