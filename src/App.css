@@ -1,6 +1,9 @@
 .App {
-  display: flex;
   text-align: center;
+}
+
+.searchBar {
+  display: block;
 }
 
 .App-logo {

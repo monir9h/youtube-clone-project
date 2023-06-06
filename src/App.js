@@ -15,7 +15,7 @@ function App() {
 
   return (
     <div className="App">
-      <SearchBar setVideos={setVideos} searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
+      <SearchBar className="searchBar" setVideos={setVideos} searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
       <VideoIndex videos={videos}/>
     </div>
   );
