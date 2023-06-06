@@ -1,23 +1,25 @@
 import './App.css';
 import React, { useState } from 'react';
-import SearchBar from './components/search/search';
-import Modal from './components/modal-window/Modal.js';
+import SearchBar from './components/search/SearchBar.js';
+import VideoIndex from './components/video-index/VideoIndex';
+import Navbar from './components/navbar/Navbar';
+
 
 function App() {
+
   const [videos, setVideos] = useState([]);
 	const [searchTerm, setSearchTerm] = useState("")
 
 
-  
 
   console.log(videos)
-  console.log(searchTerm)
+
 
   return (
     <div className="App">
-      {/* <SearchBar setVideos={setVideos} searchTerm={searchTerm} setSearchTerm={setSearchTerm}/> */}
-      <Modal/>
-      
+      <Navbar />
+      <SearchBar className="searchBar" setVideos={setVideos} searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
+      <VideoIndex videos={videos}/>
     </div>
   );
 }

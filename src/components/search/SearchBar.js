@@ -1,7 +1,9 @@
-import "./search.css";
+import "./SearchBar.css";
 import FetchApi from "../../api/fetch";
 
-function SearchBar({ setVideos, searchTerm, setSearchTerm }) {
+function SearchBar({searchTerm, setSearchTerm, setVideos}) {
+
+  // call fetch function when search button is clicked
   let handleSearch = () => {
     FetchApi(searchTerm)
       .then((data) => {
@@ -16,6 +18,7 @@ function SearchBar({ setVideos, searchTerm, setSearchTerm }) {
     <div className="search-bar">
       <input
 	  	className=".search-input"
+        placeholder="Search"
         onChange={(event) => {
           setSearchTerm(event.target.value);
         }}
