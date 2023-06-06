@@ -5,24 +5,26 @@ export default function VideoIndex({ videos }) {
   return (
     <div>
       <h1>Video List</h1>
-      {videos.map((video) => {
-        let videoId = video.id.videoId;
-        let thumbnail = video.snippet.thumbnails.high.url;
-        let title = video.snippet.title;
-
-        return (
-          <div className="container">
-            <div className="video-index">
-              <div className="video-item">
+      {videos.length > 0 ? (
+        videos.map((video) => {
+          let videoId = video.id.videoId;
+          let thumbnail = video.snippet.thumbnails.medium.url;
+          let title = video.snippet.title;
+          
+          return (
+            <div className="container">
+              <div className="video-index">
                 <div className="video-img">
                   <img src={thumbnail} alt="" />
-                </div>
+                <div className="video-item"></div>
                 <div className="video-description">{title}</div>
+                </div>
               </div>
             </div>
-          </div>
-        );
-      })}
+          );
+        })
+
+      ) : ("some type of message")}
     </div>
   );
 }
