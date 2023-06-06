@@ -1,30 +1,22 @@
 import './App.css';
-import React, { useEffect, useState } from 'react';
-import FetchApi from './api/fetch';
-import Navbar from './components/navbar/Navbar';
+import React, { useState } from 'react';
+import SearchBar from './components/search/SearchBar.js';
+import VideoIndex from './components/video-index/VideoIndex';
 
 function App() {
+
   const [videos, setVideos] = useState([]);
-  
-  useEffect(() => {
-    FetchApi("new-york")
-      .then((data) => {
-        setVideos(data.items);
-        
-      })
-      .catch((error) => {
-        console.error("Error:", error);
-      });
-  }, []);
+	const [searchTerm, setSearchTerm] = useState("")
+
+
+
   console.log(videos)
+
 
   return (
     <div className="App">
-      <Navbar/>
-      <h2>My Videos</h2>
-      {videos.map((videoTitle) => {
-        return <div key={videoTitle.id.videoId}>{videoTitle.snippet.title}</div>;
-      })}
+      <SearchBar className="searchBar" setVideos={setVideos} searchTerm={searchTerm} setSearchTerm={setSearchTerm}/>
+      <VideoIndex videos={videos}/>
     </div>
   );
 }
