@@ -29,4 +29,10 @@
     align-items: left;
     padding: 10px;
   }
+
+  .navbar a {
+    text-decoration: none;
+    color: white;
+  }
+  
   
