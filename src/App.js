@@ -5,6 +5,7 @@ import SearchBar from "./components/search/SearchBar.js";
 import VideoIndex from "./components/video-index/VideoIndex";
 import Navbar from "./components/navbar/Navbar";
 import About from "./components/about/About";
+import Modal from "./components/modal-window/Modal";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -29,6 +30,9 @@ function App() {
         </Route>
         <Route path="/about">
           <About />
+        </Route>
+        <Route path="*">
+          <Modal />
         </Route>
       </div>
     </Router>
