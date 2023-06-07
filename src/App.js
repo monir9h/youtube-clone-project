@@ -17,7 +17,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Navbar />
+        <Navbar className="navbar"/>
         <Route exact path="/">
           <SearchBar
             className="searchBar"

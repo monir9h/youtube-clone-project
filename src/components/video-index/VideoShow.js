@@ -1,7 +1,6 @@
 // https://www.youtube.com/watch?v=(videoId)
 import "./VideoShow.css";
 import VideoIndex from "./VideoIndex";
-
 import YouTube from "react-youtube";
 
 export default function VideoShow( { videoId, thumbnail, title }) {

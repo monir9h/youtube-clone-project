@@ -6,5 +6,10 @@
 .searchBar {
   display: block;
   width: 100%;
+  
 }
 
+.navbar {
+  display: block;
+  width: 100%;
+}
