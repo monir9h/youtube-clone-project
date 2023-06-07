@@ -6,7 +6,7 @@ import VideoIndex from "./components/video-index/VideoIndex";
 import Navbar from "./components/navbar/Navbar";
 import About from "./components/about/About";
 
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   const [videos, setVideos] = useState([]);
