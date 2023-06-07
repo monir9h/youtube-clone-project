@@ -1,7 +1,10 @@
 import "./VideoIndex.css";
 import YouTube from "react-youtube";
+import { useState } from "react";
+import VideoShow from "./VideoShow";
 
 export default function VideoIndex({ videos }) {
+
   return (
     <div>
       <h1>Video List</h1>
@@ -15,9 +18,10 @@ export default function VideoIndex({ videos }) {
             <div className="container">
               <div className="video-index">
                 <div className="video-img">
-                  <img src={thumbnail} alt="" />
-                <div className="video-item"></div>
-                <div className="video-description">{title}</div>
+                  <VideoShow videoId={videoId} thumbnail={thumbnail} title={title} />
+                  {/* <img src={thumbnail} alt="" /> */}
+                {/* <div className="video-item"></div>
+                <div className="video-description">{title}</div> */}
                 </div>
               </div>
             </div>
