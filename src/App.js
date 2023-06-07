@@ -25,7 +25,7 @@ function App() {
             searchTerm={searchTerm}
             setSearchTerm={setSearchTerm}
           />
-          <VideoIndex videos={videos} />
+          <VideoIndex className="videoIndex" videos={videos} />
         </Route>
         <Route path="/about">
           <About />
