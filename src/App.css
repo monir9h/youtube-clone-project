@@ -1,9 +1,11 @@
 .App {
   text-align: center;
+
 }
 
 .searchBar {
   display: block;
+  width: 100%;
 }
 
 .App-logo {
