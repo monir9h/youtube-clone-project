@@ -17,7 +17,7 @@ function SearchBar({searchTerm, setSearchTerm, setVideos}) {
   return (
     <div className="search-bar">
       <input
-	  	className=".search-input"
+	  	className="search-input"
         placeholder="Search"
         onChange={(event) => {
           setSearchTerm(event.target.value);
