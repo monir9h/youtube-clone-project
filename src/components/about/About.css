@@ -1,3 +1,6 @@
+.about {
+  margin: 20px;
+}
 
 strong{
 color: rgb(7,54,44);
@@ -18,14 +21,14 @@ footer {
   img  {
     border: 2px solid #25283d;
     border-radius: 3px;
-    height: 100%;
-    width: 20%;
+    height: 100px;
+    width: 110px;
     justify-content: left;
   }
   
-  .card{
-  display: flex;
-  }
+.card{
+display: flex;
+}
 
 .info-container{
   text-align: center;
@@ -35,3 +38,14 @@ body{
   font-family: 'Eagle Lake';
 }
 
+.about-message {
+  background-color: rgba(255, 227, 227, 0.934);
+  width: 100%;
+}
+
+.paragraph-wrapper {
+  padding: 0 5px 5px 5px;
+}
+ h2{
+  padding: 10px 0 0 0;
+ }
